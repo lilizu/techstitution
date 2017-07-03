@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>Techstitution</title>
+
+	
+   <meta charset="utf-8">
+
+
+
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+      <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css"> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+
+
+
+
+
+  </head>
+     
+
+
+
+<body id="page5">
+	<header>
+		 <nav class="navbar navbar-default navbar-fixed-top">
+   			<div class="container" id="head-nav" >
+     		<div class="navbar-header">
+     			 <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#myNav">
+        		 <span class="icon-bar"></span>
+        		 <span class="icon-bar"></span>
+        		 <span class="icon-bar"></span></button>
+   
+     
+     				<figure class="figure">
+      					<a href="http://caa-ks.org/" data-toggle="tooltip" title="faqja zyrtare CAA" target="_blank" class="navbar-brand "><img src= "caa.png" width="170px" height="90px" alt="Civil Aviation Authority of Kosovo" class="figure-img img-fluid rounded" style="border-radius:10px;"></a>
+        
+   					 </figure>
+       		</div>
+      
+      		<div class="container-fluid">
+      		<div class="collapse navbar-collapse" id="myNav">
+       			<ul class=" nav navbar-nav navbar-right">
+        			<li class="active "><a href="#section1">Dashboard</a></li>
+        			<li class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+         			<ul class="dropdown-menu">
+           			<li><a href="#section12">my Project</a></li>
+           			<li><a href="#section13"></a>hello</li>
+        		    </ul>
+        			</li>
+       				<li><a href="#section2">Contact Us</a></li>
+        			<li><a href="#section3">Search button</a></li>
+
+                 </ul>
+      		</div>
+      		</div>
+     	</div>
+ 	 </nav>
+</header>
+
+
+
+
+      <div class="container">
+
+
+          <div class="row"  style="margin-top:100px">
+            <div class="col-xs-6">
+                <h1 class="">New corrective actions</h1>
+                  <hr />
+             </div>
+          </div>
+
+  
+                   <form data-toggle="validator" role="form" action="" class="form-horizontal " id="auditform2" enctype="multipart/form-data">
+
+  
+    <!--1-->
+                             <div class="form-group">
+                             <label for="finding-id" class="control-label col-xs-2">Finding id: </label>
+                              <div class="col-xs-6">
+                             <input type="text" class="form-control" id="finding-id" placeholder="Automatically" required>
+                             </div>
+                            </div>
+    <!--2-->
+                             <div class="form-group ">
+                            <label for="action-description" class="control-label col-xs-2"> Corrective Action Description: </label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="action-description" placeholder="Corrective Action Description" required>
+                                    </div>
+                              </div>
+    
+    
+
+
+
+    
+    <!--4-->
+                          <div class="form-group ">
+      <label for="date-cap" class="control-label col-xs-2">Date of CAP approval:</label>
+      <div class="col-xs-6">
+
+         <div class='input-group date' id='datetimepicker2'>
+                    <input id ="date-cap" type='text' class="form-control" placeholder="Date of CAP approval" required>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                 <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker2').datetimepicker();
+                });
+            </script>
+            </div>
+             
+    </div>
+
+      <div class="form-group">
+      <label for="due-date" class="control-label col-xs-2" >Due Date: </label>
+      <div class="col-xs-6">
+      <input class="form-control" id="due-date" type="text" placeholder="Deadline" required>
+          </div>
+     
+    </div>
+
+
+ <div class="form-group ">
+      <label for="contact-person" class="control-label col-xs-2"> Contact Person: </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="contact-person" placeholder="Corrective Action Description" required>
+      </div>
+    </div>
+
+     <div class="form-group ">
+      <label for="closure-date" class="control-label col-xs-2">Closure Date:(if it is due date is close, else is opened) </label>
+      <div class="col-xs-6">
+
+         <div class='input-group date' id='datetimepicker3'>
+                    <input id ="closure-date" type='text' class="form-control" placeholder="Closure Date" required>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                 <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker3').datetimepicker();
+                });
+            </script>
+            </div>
+             
+    </div>
+
+
+    <div class="form-group ">
+      <label for="due-date-history" class="control-label col-xs-2"> Due Date History: text of dates that were changed during the follow up actions (ie. 12/03/2017, 25/07/2017): </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="due-date-history" placeholder="" required>
+    </div>
+    </div>
+
+
+ <!-- </form> -->
+
+
+  <div class="panel-group " id="accordion">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Auditee corrective actions: </a>
+        </h4>
+      </div>
+
+      <div id="collapse1" class="panel-collapse collapse in">
+        <!-- <form class="panel-body form-horizontal"> -->
+
+        
+
+         <div class="form-group ">
+      <label for="date_nc" class="control-label col-xs-2">Date:</label>
+      <div class="col-xs-6">
+
+         <div class='input-group date' id='datetimepicker2'>
+                    <input id ="date_nc" type='text' class="form-control" placeholder="Date " required>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                 <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker2').datetimepicker();
+                });
+            </script>
+            </div>
+             
+    </div>
+
+
+     <div class="form-group ">
+      <label for="description_nc" class="control-label col-xs-2"> Description: </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="description_nc" placeholder="">
+    </div>
+    </div>
+
+    <div class="form-group ">
+      <label for="pruposed_nc" class="control-label col-xs-2"> New Pruposed Due Date: </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="pruposed_nc" placeholder="">
+    </div>
+    </div>
+
+<!--  </form>  -->
+
+
+</div>
+      </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">CAA Follow up actions:</a>
+        </h4>
+      </div>
+
+      <div id="collapse2" class="panel-collapse collapse">
+        
+      <!--  <form class="panel-body form-horizontal ">  -->
+
+         <div class="form-group ">
+      <label for="date1_nc" class="control-label col-xs-2">Date:</label>
+      <div class="col-xs-6">
+
+         <div class='input-group date' id='datetimepicker2'>
+                    <input id ="date1_nc" type='text' class="form-control" placeholder="Date " required>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                 <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker2').datetimepicker();
+                });
+            </script>
+            </div>
+             
+    </div>
+  
+
+     <div class="form-group ">
+      <label for="description1_nc" class="control-label col-xs-2"> Description: </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="description1_nc" placeholder="" required>
+    </div>
+    </div>
+
+
+
+     <div class="form-group ">
+      <label for="responsible_nc" class="control-label col-xs-2"> Who is responsible: </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="responsible_nc" placeholder="" required ="required" >
+    </div>
+    </div>
+
+    <div class="form-group ">
+      <label for="new_due_date_nc" class="control-label col-xs-2"> New due date: Update initial due date(Deadline) : </label>
+      <div class="col-xs-6">
+      <input type="text" class="form-control" id="new_due_date_nc" placeholder="" required>
+    </div>
+    </div>
+
+ <!-- </form> -->
+
+
+
+</div>
+      </div>
+
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Attach Document files:</a>
+        </h4>
+      </div>
+
+      <div id="collapse3" class="panel-collapse collapse">
+        
+      <!--  <form class="panel-body form-horizontal ">  -->
+      <div class="panel-body">
+      <div class="row">
+      <p class="col-xs-2"><strong>1. Foto:</strong> </p>
+     <div class="fileupload fileupload-new col-xs-4" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
+    <span class="fileupload-exists">Change</span>         <input type="file" /></span>
+    <span class="fileupload-preview"></span>
+    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+  </div>
+</div>
+  <div class="row">
+   <p class="col-xs-2"><strong>2. Evidenca:</strong></p>
+    <div class="fileupload fileupload-new col-xs-4" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
+    <span class="fileupload-exists">Change</span>         <input type="file" /></span>
+    <span class="fileupload-preview"></span>
+    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+  </div>
+</div>
+<div class="row">
+   <p class="col-xs-2"><strong> 3. Raporti: </strong></p>
+    <div class="fileupload fileupload-new col-xs-2" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
+    <span class="fileupload-exists">Change</span>         <input type="file" /></span>
+    <span class="fileupload-preview"></span>
+    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+  </div>
+</div>
+<div class="row">
+   <p class="col-xs-2"><strong> 4. Orari: </strong></p>
+    <div class="fileupload fileupload-new col-xs-2" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
+    <span class="fileupload-exists">Change</span>         <input type="file" /></span>
+    <span class="fileupload-preview"></span>
+    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+  </div>
+</div>
+<div class="row">
+   <p class="col-xs-2"><strong> 5. Checklists: </strong></p>
+    <div class="fileupload fileupload-new col-xs-2" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
+    <span class="fileupload-exists">Change</span>         <input type="file" /></span>
+    <span class="fileupload-preview"></span>
+    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+  </div>
+</div>
+
+
+
+
+</div>
+      </div>
+
+  </div>
+
+
+  </div>
+
+    <div class="row" style="margin:40px">       
+      <div class="col-xs-2">
+        <button style="padding: 20px" type="submit" class="btn btn-primary">Save Document</button>
+   </div>
+
+  
+ </form>
+
+
+
+
+
+
+</div>
+
+ <script type="text/javascript"  src="upload_files.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

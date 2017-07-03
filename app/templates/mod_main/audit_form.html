@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>Techstitution</title>
+
+	
+   <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+      <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css"> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+  </head>
+     
+
+
+
+<body id="page3">
+	<header>
+		 <nav class="navbar navbar-default navbar-fixed-top">
+   			<div class="container" id="head-nav" >
+     		<div class="navbar-header">
+     			 <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#myNav">
+        		 <span class="icon-bar"></span>
+        		 <span class="icon-bar"></span>
+        		 <span class="icon-bar"></span></button>
+   
+     
+     				<figure class="figure">
+      					<a href="http://caa-ks.org/" data-toggle="tooltip" title="faqja zyrtare CAA" target="_blank" class="navbar-brand "><img src= "caa.png" width="170px" height="90px" alt="Civil Aviation Authority of Kosovo" class="figure-img img-fluid rounded" style="border-radius:10px;"></a>
+        
+   					 </figure>
+       		</div>
+      
+      		<div class="container-fluid">
+      		<div class="collapse navbar-collapse" id="myNav">
+       			<ul class=" nav navbar-nav navbar-right">
+        			<li class="active "><a href="#section1">Dashboard</a></li>
+        			<li class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+         			<ul class="dropdown-menu">
+           			<li><a href="#section12">my Project</a></li>
+           			<li><a href="#section13"></a>hello</li>
+        		    </ul>
+        			</li>
+       				<li><a href="#section2">Contact Us</a></li>
+        			<li><a href="#section3">Search button</a></li>
+
+                 </ul>
+      		</div>
+      		</div>
+     	</div>
+ 	 </nav>
+</header>
+
+
+
+
+<!-- NEW AUDIT FORM-->
+
+
+	
+
+ 
+
+
+
+							<div class="container" style="margin-top: 100px">
+								<h1  >New Audit </h1>
+
+
+	
+
+									<form action="" class="form-horizontal well" id="auditform">
+
+										<h2 class="text-primary">1. Audit Menagment Data</h2>
+											<hr />
+		<!--1-->
+										<div class="form-group">
+												<label for="ref-num" class="control-label col-xs-2">1. Reference Number: </label>
+										<div class="col-xs-6">
+												<input type="text" class="form-control" id="ref-num" placeholder="Reference Number.." name="reference_number">
+										</div>
+										</div>
+		<!--2-->
+										<div class="form-group ">
+												<label for="audit-title" class="control-label col-xs-2"> 2. Audit Title: </label>
+										<div class="col-xs-6">
+												<input type="text" class="form-control" id="audit-title" placeholder="Audit Title..." name="audit_title">
+										</div>
+										</div>
+		<!--3 dropdown list-->
+		
+										<div class="form-group">
+												<label for="selectform" class="control-label col-xs-2"> 3. Audit Type: </label>
+										<div class="col-xs-4 ">
+				
+
+											<select id="selectform" name="audit_type" class="btn btn-default" form="auditform" autofocus>
+
+													<option value="audit"> Audit</option>
+													<option value="Inspection">Inspection</option>
+													<option value="Ad-hoc">Ad-hoc inspection</option>
+													<option value="followUp">Follow-up </option>
+													<option value="changeNum"> Change</option>
+													<option value="Unannounced">Unannounced </option>
+													<option class="divider"></option>
+													<option value="other">Other: </option>
+											</select>
+										</div>
+										</div>
+		<!--4-->
+										<div class="form-group ">
+												<label for="audit_start_date" class="control-label col-xs-2"> 4. Audit Start Date: </label>
+										<div class="col-xs-2">
+
+			   							<div class='input-group date' id='datetimepicker1'>
+                    							<input type='text' class="form-control" placeholder="audit start date" id="audit_start_date" name="audit_start_date">
+                    									<span class="input-group-addon">
+                        								<span class="glyphicon glyphicon-calendar"></span>
+                   									    </span>
+                						</div>
+                										 <script type="text/javascript">
+                												$(function () {
+                   												 $('#datetimepicker1').datetimepicker();
+               												 });
+            											</script>
+            							</div>
+             
+										</div>
+		<!--5-->
+										<div class="form-group ">
+												<label for="audit_end_date" class="control-label col-xs-2"> 5. Audit End Date: </label>
+											<div class="col-xs-2">
+
+			   								<div class='input-group date' id='datetimepicker2'>
+                    							<input type='text' class="form-control" id="audit_end_date" name="audit_end_date" placeholder="audit end date"/>
+                    								<span class="input-group-addon">
+                        								<span class="glyphicon glyphicon-calendar"></span>
+                    									</span>
+                							</div>
+                										 <script type="text/javascript">
+                											$(function () {
+                    										$('#datetimepicker2').datetimepicker();
+               												 });
+          												  </script>
+            								</div>
+			
+										</div>
+
+		<!--6-->
+										<div class="form-group ">
+												<label for="auditee" class="control-label col-xs-2"> 6. Auditee: </label>
+											<div class="col-xs-6">
+												<input type="text" class="form-control" id="auditee" name="auditee" placeholder="Auditee">
+											</div>
+										</div>
+		<!--7-->
+										<div class="form-group">
+												<label for="place" class="control-label col-xs-2"> 7. Place: </label>
+											<div class="col-xs-6">
+												<input type="text" class="form-control" id="place" name="place" placeholder="type your place">
+											</div>
+										</div>
+		<!--8-->
+										<div class="form-group classname1" >
+
+												<script type="text/javascript">
+
+														$(document).ready(function(){
+														$('#selectform').on('change', function(){
+															if($(this).val() =='followUp'){
+
+																$('.classname1').hide(500);
+																$('.classname').show();
+
+																}else if($(this).val() =='changeNum'){
+																		$('.classname').hide(500);
+																		$('.classname1').show();
+																	}
+
+															});
+														});
+
+												</script>
+
+													<label for="follow_up" class="control-label col-xs-2" id="form1" > 8. Follow-up reference number: </label>
+												<div class="col-xs-1">
+													<input class="form-control" type="number" name="follow_up"
+  																 min="0" max="100" step="10" value="30" id="follow_up" >
+  												</div>
+ 		 
+										</div>
+		<!--9-->
+
+										<div class="form-group classname"  >
+												<label for="change_ref_num" class="control-label col-xs-2" > 9. Change reference number: </label>
+			
+											<div class="col-xs-1" >
+												<input id="change_ref_num" class="form-control" type="number" name="change_ref_num"
+  				 											min="0" max="100" step="10" value="30">
+  											</div>
+										</div>
+		<!--10-->
+										<div class="form-group ">
+												<label for="audit-leader" class="control-label col-xs-2"> 10. Audit Team leader: </label>
+											<div class="col-xs-6">
+												<input type="text" class="form-control" id="audit-leader" placeholder="Audit Team leader">
+											</div>
+										</div>
+		<!--11-->
+										<div class="form-group">
+												<label for="audit_title" class="control-label col-xs-2"> 11. Audit Title: </label>
+											<div class="col-xs-6">
+												<input type="text" class="form-control" id="audit_title" placeholder="Audit Title">
+											</div>
+										</div>
+		<!--12-->
+										<div class="form-group">
+												<label for="audit_members" class="control-label col-xs-2"> 12. Audit Members: </label>
+											<div class="col-xs-6">
+												<input type="text" class="form-control" id="audit_members" placeholder="Audit Members">
+											</div>
+										</div>
+
+
+
+								<h2 class="text-primary">2. Audit Scope</h2>
+		
+							 		<hr />
+		 							<p>Field of requerement</p>
+
+		  <script type="text/javascript">
+		  	$(document).ready(function() {
+    		var max_fields      = 10; //maximum input boxes allowed
+    		var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    		var add_button      = $(".add_field_button"); //Add button ID
+    
+    			var x = 1; //initlal text box count
+    		$(add_button).click(function(e){ //on add input button click
+        		e.preventDefault();
+        		if(x < max_fields){ //max input box allowed
+            		x++; //text box increment
+            	$(wrapper).append('<div class="col-xs-8"><input type="text"  class="form-control" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+        		}
+   			 });
+    
+    		$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+       			 e.preventDefault(); $(this).parent('div').remove(); x--;
+    			
+    			})
+			})
+
+
+
+		  </script>
+
+		 <div class="form-group input_fields_wrap">
+			<button class=" add_field_button  glyphicon glyphicon-plus btn btn-default"></button>
+			
+			<div class="col-xs-8">
+			<input type="text" class="form-control" id="audit_scope" name="mytext[]">
+			</div>
+		</div>
+
+		<h2 class="text-primary">3. Document Review</h2>
+		<hr />
+		<p>Add dynamically fields of Document Review: </p>
+		 <script type="text/javascript">
+		  	$(document).ready(function() {
+    		var max_fields      = 10; //maximum input boxes allowed
+    		var wrapper         = $(".input_fields_wrap1"); //Fields wrapper
+    		var add_button      = $(".add_field_button1"); //Add button ID
+    
+    			var x = 1; //initlal text box count
+    		$(add_button).click(function(e){ //on add input button click
+        		e.preventDefault();
+        		if(x < max_fields){ //max input box allowed
+            		x++; //text box increment
+            	$(wrapper).append('<div class="col-xs-8"><input type="text"  class="form-control" name="mytext[]"/><a href="#" class="remove_field1">Remove</a></div>'); //add input box
+        		}
+   			 });
+    
+    		$(wrapper).on("click",".remove_field1", function(e){ //user click on remove text
+       			 e.preventDefault(); $(this).parent('div').remove(); x--;
+    			
+    			})
+			})
+
+
+
+		  </script>
+
+		 <div class="form-group input_fields_wrap1">
+			<button class=" add_field_button1  glyphicon glyphicon-plus btn btn-default"></button>
+			
+			<div class="col-xs-8">
+			<input type="text" class="form-control" id="doc_rew" name="mytext[]">
+			</div>
+		</div>
+
+
+			
+			<div class="row" style="margin:40px">       
+      <div class="col-xs-4">
+        <button style="padding: 20px" type="submit" class="btn btn-primary">Save Document</button>
+	 </div>
+	 <div class="col-xs-4 ">
+	 	   <a href="new_nc.html" target="_blank" class="btn btn-danger" style="padding: 20px" ><span class="glyphicon glyphicon-plus"></span> New NC</a>
+
+	 </div>
+	 <div class="col-xs-4 ">
+	 	   <button type="button" class="btn btn-warning btn-lg" style="padding: 20px" ><span class="glyphicon glyphicon-ok-sign"></span>Save as Pdf</button>
+
+	 </div>
+
+    </div>
+
+</form>
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+ <footer class="container-fluid" >
+  <div class="row">
+   <div class="col-md-4">Reference Number</div>
+    <div class="col-md-4">
+       <p> Copyright © by Ilirijana Zuka. All rights reserved!</p>
+     </div>
+     <div class="col-md-4">Version/Data</div>
+   </div>
+ 
+
+
+</footer>
+</body>
+
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+    <head>
+    <title>Techstitution</title>
+
+
+        <head>
+ <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+    <script type="text/javascript"  src="index.js"></script>
+    </head>
+
+
+    <!-- first Page Log in form -->
+
+   <body id="page1"> 
+
+    <header>
+
+         <div class="row centered">
+        <div class="col-sm-4 col-md-4">
+            
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <figure class="figure">
+      <a href="http://caa-ks.org/" data-toggle="tooltip" title="faqja zyrtare CAA" target="_blank" class="navbar-brand "><img src= "CAA.jpg" width="410px" height="230px" alt="Civil Aviation Authority of Kosovo" class="figure-img img-fluid rounded" style="border-radius:10px;"></a>
+        
+    </figure>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </header>
+ <!-- <header>
+            
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" id="head-nav" >
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#myNav">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span></button>
+   
+     
+     <figure class="figure">
+      <a href="http://caa-ks.org/" data-toggle="tooltip" title="faqja zyrtare CAA" target="_blank" class="navbar-brand "><img src= "caa.png" width="100px" height="60px" alt="Civil Aviation Authority of Kosovo" class="figure-img img-fluid rounded" style="border-radius:10px;"></a>
+        
+    </figure>
+       </div>
+      
+      <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNav">
+       <ul class=" nav navbar-nav navbar-right">
+        <li class="active "><a href="#section1">Dashboard</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="#section12">my Project</a></li>
+           <li><a href="#section13"></a>hello</li>
+         </ul>
+        </li>
+        <li><a href="#section2">Contact Us</a></li>
+        <li><a href="#section3">Search button</a></li>
+
+        </ul>
+      </div>
+      </div>
+     </div>
+  </nav>
+        </header>
+-->
+
+
+<!-- Form Module-->
+  <div class="panel panel-default" id="panel1">
+
+    <!-- first for the log in form -->
+
+      <div id="first">
+        <div  class="panel-heading" id="panel_heading"><h2> <span class="glyphicon glyphicon-lock " style="left:-10px"></span>Please Log In </h2></div>
+    
+
+          <form class=" panel-content" id="panel-content" method="POST">
+
+
+        <div class="form-group">
+        <label for="loginemail" > <span class="glyphicon glyphicon-user"></span> Email: </label>
+        <input id="loginemail" type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+  
+        <div class="form-group">
+         <label for="loginpassword"> <span class="glyphicon glyphicon-eye-open"></span>  Password: </label>
+          <input id="loginpassword" type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+     
+        <div class="checkbox">
+        <label><input type="checkbox" value="check">Remember Me</label>
+        </div>
+     
+      
+      <button  id="login" name="SUBMIT" class="btn btn-primary" value="Sign In"><span class="glyphicon glyphicon-off"></span> Log in</button>
+  
+
+    </form>
+    <div class="panel-footer"> <p id="two">Not a member? <a href="#" class="register" id="signup" >Register</a></p>
+          <p id="one">Forgot <a href="#" class="forgot-password" title="Forgot password?">Password?</a></p>
+     </div>
+
+  </div>
+
+
+<!-- second for register form -->
+
+
+ 
+<!-- Create Div Second For Signup Form-->
+<div id="second">
+  <div  class="panel-heading"><h2>Create an Account</h2></div>
+<form action="" id="form" method="post" name="form" class="panel-content">
+  
+  <div class="form-group">
+  <label for = "name"></label>
+  <input class="form-control" id="name" placeholder="Full Name" type="text">
+  </div>
+
+
+<div class="form-group">
+  <label for="registeremail"></label>
+<input id="registeremail" class="form-control" placeholder="Email" type="text">
+</div>
+
+ <div class="form-group">
+ <label for="registerpassword"> </label>
+<input id="registerpassword" class="form-control" placeholder="Password" type="password">
+</div>
+
+ <div class="form-group">
+  <label for="contact"></label>
+<input  class="form-control" id="contact" placeholder="Contact Number" type="text">
+</div>
+
+<div class="form-group">
+  <label for="register"></label>
+<input id="register" class="btn btn-primary" type="button" value="Register">
+</div>
+
+</form>
+
+<div class="panel-footer ">
+<p id="two">Already have an account? <a class="signin" href="#" id="signin">Sign in</a></p>
+</div>
+</div>
+   </div>
+
+ 
+
+
+
+
+
+<footer class="container" >
+
+  <p class="text-center" style="margin-top: 25px"> This platform is powered by Techstitution. Sincerly for the staff of Civil Aviation Authority of Kosovo</p>
+
+
+</footer>
+
+
+  
+   
+
+</body>
+
+<!--
+  {% extends 'layout.html' %}
+{% block content %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.remove').click(function(){
+            var url = '/remove/'+this.id;  "{{url_for('main.remove_report')}}"
+            var reporT_id = this.id;
+            $.post(url, {""})
+            $.get(url, function(data){
+                $('#'+this.id).parent().parent().remove();
+            });
+
+            $('#submit').click(function(e){
+            e.preventDefault();
+            // Submit logic.
+            // Build json data
+            // Do an AJAX call
+            // Add row dynamically
+        });
+        });
+    });
+</script>
+<h2>Reports:</h2>
+<table class="table">
+    <thead>
+        <td>Emri</td>
+        <td>Mbiemri</td>
+        <td>Veprimet</td>
+    </thead>
+    <tbody>
+        {% for report in reports %}
+            <tr>
+                <td>{{report.name}}</td>
+                <td>{{report.last_name}}</td>
+                <td>
+                    <a id="{{ report._id }}" class="remove">Remove</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<form method="POST">
+    Name: <input type="text" name="name"/><br />
+    Last name: <input type="text" name="last_name" />
+    <input type="submit" value="SUBMIT">
+</form>
+{% endblock %}
+-->
+
